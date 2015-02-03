@@ -10,17 +10,23 @@
 
 // convert between alternate bases
 int baseConvert(int base, int value){
+    char HEX[] = {'A', 'B', 'C', 'D', 'E', 'F', '\0'};
     char output[50] = "";
     int i = 0;
     while(value > 0){
         // add remainder to ouput string
-        sprintf(&output[i], "%d", (value % base));
+        if((value % base) > 9){
+            // check for hexidecimal conversion
+            strcat(&output[i], &HEX[((value % base) - 10)]);
+        }else{
+            sprintf(&output[i], "%d", (value % base));
+        }
         i++;
         // decrement the testing value
         value = (value / base);
     }
     printf("Converted Value: ");
-    for(i=0;i<sizeof(output);i++){
+    for(i=sizeof(output);i>=0;i--){
         // print back output string one by one
         printf("%c", output[i]);
     }
