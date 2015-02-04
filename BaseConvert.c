@@ -12,8 +12,7 @@
 #include <stdlib.h>
 
 // helper functions
-char *strrev(char *str)
-{
+char *strrev(char *str){
     char *p1, *p2;
     if (!str || !*str){
         return str;
