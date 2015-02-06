@@ -28,15 +28,18 @@ void clearBuffer(){
     fseek(stdin,0,SEEK_END);
 }
 
-int fromDecimal(int base, int value){
+
+// from decimal to hex, octal, binary
+void fromDecimal(int base, int value){
     // from decimal to alternate base
-    char HEX[] = {'A', 'B', 'C', 'D', 'E', 'F', '\0'};
+    char *HEX[] = {"A", "B", "C", "D", "E", "F", '\0'};
     char output[50] = "";
     int i = 0;
     while(value > 0){
         // add remainder to ouput string
         if((value % base) > 9){
-            strcat(&output[i], &HEX[((value % base) - 10)]);
+            int z = ((value % base) - 10);
+            strcat(&output[i], HEX[z]);
         }else{
             sprintf(&output[i], "%d", (value % base));
         }
@@ -51,9 +54,51 @@ int fromDecimal(int base, int value){
             printf("%c", output[i]);
         }
     }
-    return 1;
 }
-int fromBinary(int base, char value[50]){
+
+// from hexidecimal to decimal
+void fromHex(int base, char *a){
+    // get char length
+    long len = strlen(a);
+    int i;
+    // output value
+    unsigned long val = 0;
+    for(i=0;i<len;i++){
+        if(a[i] <= 57){
+            val += (a[i]-48)*(1<<(4*(len-1-i)));
+        }else{
+            val += (a[i]-55)*(1<<(4*(len-1-i)));
+        }
+    }
+    if(base == 10){
+        // to decimal
+        printf("Converted Value: %lu", val);
+    }else{
+        // to octal / binary
+        fromDecimal(base, val);
+    }
+}
+
+// from octal to decimal
+void fromOctal(int base, int n){
+    int decimal=0, i=0, rem;
+    while (n!=0){
+        rem = n%10;
+        n/=10;
+        decimal += rem*pow(8,i);
+        ++i;
+    }
+    if(base == 10){
+        // to decimal
+        printf("Converted Value: %d", decimal);
+    }else{
+        // to octal / hexidecimal
+        fromDecimal(base, decimal);
+    }
+}
+
+// from binary to decimal
+void fromBinary(int base, char value[50]){
     // reverse char array to start at the end of binary
     strrev(value);
     int decimal = 0;
@@ -68,11 +113,12 @@ int fromBinary(int base, char value[50]){
         }
     }
     if(base == 10){
+        // to decimal
         printf("Converted Value: %d", decimal);
     }else{
+        // to octal / hexidecimal
         fromDecimal(base, decimal);
     }
-    return 1;
 }
 
 int main(){
@@ -87,9 +133,15 @@ int main(){
     clearBuffer();
     printf("Converting to base: ");
     scanf("%d", &baseAfter);
-    if(baseBefore == 10){
+    if(baseBefore == 16){
+        // from hex
+        fromHex(baseAfter, original);
+    }else if(baseBefore == 10){
         // from decimal
         fromDecimal(baseAfter, atoi(original));
+    }else if(baseBefore == 8){
+        // from octal
+        fromOctal(baseAfter, atoi(original));
     }else if(baseBefore == 2){
         // from binary
         fromBinary(baseAfter, original);
