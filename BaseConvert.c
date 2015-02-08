@@ -81,11 +81,11 @@ void fromHex(int base, char *a){
 
 // from octal to decimal
 void fromOctal(int base, int n){
-    int decimal=0, i=0, rem;
+    int decimal=0, i=0, remainder;
     while (n!=0){
-        rem = n%10;
+        remainder = n%10;
         n/=10;
-        decimal += rem*pow(8,i);
+        decimal += remainder*pow(8,i);
         ++i;
     }
     if(base == 10){
