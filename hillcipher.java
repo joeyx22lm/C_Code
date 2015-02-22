@@ -2,10 +2,6 @@
 *  @author Joseph Orlando
 *  @creation 2/22/2015
 */
-/* hillcipher CLI Java Console Application 
-*  @author Joseph Orlando
-*  @creation 2/22/2015
-*/
 import java.io.*;
 import java.util.*;
 import java.io.BufferedReader;
