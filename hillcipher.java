@@ -2,6 +2,10 @@
 *  @author Joseph Orlando
 *  @creation 2/22/2015
 */
+/* hillcipher CLI Java Console Application 
+*  @author Joseph Orlando
+*  @creation 2/22/2015
+*/
 import java.io.*;
 import java.util.*;
 import java.io.BufferedReader;
@@ -22,6 +26,7 @@ public class hillcipher
       String[] SplitString = s.split("(?<=\\G.{" + chunkSize + "})");
       int lasti = (SplitString.length - 1);
       while(SplitString[lasti].length() < chunkSize){
+         // plaintext padding
          SplitString[lasti] = (SplitString[lasti] + "X");
       }
       return SplitString;
