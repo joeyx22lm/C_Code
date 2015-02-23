@@ -27,7 +27,6 @@ public class hillcipher
       }
       return SplitString;
    }
-
    private static String readAll(String path, Charset encoding){
       try {
          byte[] encoded = Files.readAllBytes(Paths.get(path));
@@ -36,7 +35,6 @@ public class hillcipher
          System.out.println(e.getMessage());
          return null;
       }
-     
    }
    private static String[] readLine(String filename) {
        try {
@@ -57,10 +55,6 @@ public class hillcipher
         }
      
    }
-   public static int[][] buildMatrix(){
-      int[][] outval = new int[1][1];
-      return outval;
-   }
    public static void main(String [] args)
    {
       // build alphabet map
@@ -69,10 +63,8 @@ public class hillcipher
       for(int i = 0;i<Alphabet.length;i++){
          Alpha.put(Alphabet[i], i);
       }
-      
       // declare output string
       String Output = new String();
-      
       // begin reading keyfile
       String[] keyLines = readLine(args[0]);
       if(keyLines == null){
@@ -122,7 +114,6 @@ public class hillcipher
                
             }
             // matrix for this set of nth numbers has been built
-            
             // apply against key matrix
             // create output matrix for this set
             Map<Integer, Integer> outputMatrix = new HashMap<Integer, Integer>();
@@ -136,7 +127,6 @@ public class hillcipher
                }
                outputMatrix.put(keyrow, rowval);
             }
-            
             for (Map.Entry<Integer, Integer> switchmod : outputMatrix.entrySet()){
                float modval = modval(switchmod.getValue(), 26);
                for (Map.Entry<String, Integer> outputalpha : Alpha.entrySet()){
