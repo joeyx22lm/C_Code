@@ -3,13 +3,11 @@ import java.util.Scanner;
 public class Factorial
 {
   public static long factorial(long N){
-   long Value = 0;
-   if(N <= 1){
-      return 1;
-   }else{
+   long Value = 1;
+   if(N > 1){
       Value = (N * factorial(--N));
-      return Value;
    }
+   return Value;
   }
   public static void main(String [] args){
     System.out.println("Factorial of: ");
