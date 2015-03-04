@@ -10,6 +10,9 @@ This assignment provides more practical experience parsing data files and creati
 # BaseConvert.c
 Numeric base converter supporting binary, decimal, octal and hexidecimal. Written in C.
 
+# Factorial.java
+Factorial Function with Recursion .. ohh my lawd 
+
 # CIS -  hillcipher.java
 Java CLI program, encrypts plaintext file based on key file, with hill cipher.
 hillcipher.java <keyfilepath> <plaintextfilepath>
