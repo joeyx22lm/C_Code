@@ -138,6 +138,7 @@ public class hillcipher
             }
          }
       }
+      // output within 80 character formatted lines
       System.out.printf(Output.replaceAll("(.{80})", "$1\n").toLowerCase());
    }
 }
