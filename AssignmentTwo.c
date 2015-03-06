@@ -136,6 +136,8 @@ int main(){
    // build initial variables
    struct produceItem * Inventory = malloc(sizeof(struct produceItem));;
    int InventoryCount = 0, MENU_SELECTION = 0;
+   // set boolean to determine if we have already reversed 
+   // the Inventory list from original import.
    bool switchx = false;
    while(true){
       printf("%s", MENU_STRING);
