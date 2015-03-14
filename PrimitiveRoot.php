@@ -21,7 +21,7 @@ function PrimitiveRoot($a, $p){
   return true;
 }
 echo 'is 2 pR of 13? = ';
-if(PrimitiveRoot(3, 11)){
+if(PrimitiveRoot(2, 13)){
   echo 'yes!'; 
 }else{
   echo 'no!'; 
