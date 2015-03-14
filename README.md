@@ -14,7 +14,7 @@ Numeric base converter supporting binary, decimal, octal and hexidecimal. Writte
 Factorial Function by both Iteration and Recursion .. ohh my lawd 
 
 # PrimitiveRoot.php
-Function that finds if a is primitive root of p, i was feelin hot with the comments
+Function that finds if a is primitive root of p
 
 # hillcipher.java
 Java CLI program, encrypts plaintext file based on key file, with hill cipher.
