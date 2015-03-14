@@ -5,6 +5,7 @@
 //  Created by Joseph Orlando on 3/13/15.
 //  Copyright (c) 2015 Joseph Orlando. All rights reserved.
 //
+    # Funny comments are the way to go!
 
 function PrimitiveRoot($a, $p){
   $Seen = array();
