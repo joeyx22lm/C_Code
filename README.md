@@ -13,6 +13,9 @@ Numeric base converter supporting binary, decimal, octal and hexidecimal. Writte
 # Factorial.java
 Factorial Function by both Iteration and Recursion .. ohh my lawd 
 
-# CIS -  hillcipher.java
+# PrimitiveRoot.php
+Function that finds if a is primitive root of p, quick draft for fun
+
+# hillcipher.java
 Java CLI program, encrypts plaintext file based on key file, with hill cipher.
 hillcipher.java <keyfilepath> <plaintextfilepath>
