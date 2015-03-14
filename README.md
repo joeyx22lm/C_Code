@@ -1,5 +1,5 @@
 # SmallScale
-Small-scale code, nothing for production use. Miscellaneous code written in C, Java and PHP. Refer to this readme for each program / script description. Refer to each file for logic, credits or any additional information.
+Small-scale code, nothing for production use; all is written by me for various personal or school projects; All code is open source, as in free air. If it is wrong, doesn't compile, causes spontaneous combustion, etc. it's not on me. Miscellaneous code written in C, Java and PHP. Refer to this readme for each program / script description. Refer to each file for logic, credits or any additional information.
 
 # COP - AssignmentOne.c
 The goal of this assignment is to write an application that reads in a data file and stores the data as a linked list.
