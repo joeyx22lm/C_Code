@@ -20,7 +20,7 @@ function PrimitiveRoot($a, $p){
   // yessir
   return true;
 }
-echo 'is 2 pR of 13? = ';
+echo 'is 2 a primitive root of 13? = ';
 if(PrimitiveRoot(2, 13)){
   echo 'yes!'; 
 }else{
