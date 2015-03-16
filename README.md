@@ -19,3 +19,6 @@ Function that finds if a is primitive root of p
 # hillcipher.java
 Java CLI program, encrypts plaintext file based on key file, with hill cipher.
 hillcipher.java <keyfilepath> <plaintextfilepath>
+
+# phi.c
+Euler's Totient / Phi written in C
