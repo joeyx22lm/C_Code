@@ -1,3 +1,8 @@
+/*
+Author: Joseph Orlando, May 27th, 2015.
+2014 Local Programming Contest Factorial Products problem
+Took apx. 45 minutes to complete (better next time?).
+*/
 import java.util.Scanner;
 import java.util.*;
 public class fact {
