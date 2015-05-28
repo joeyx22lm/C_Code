@@ -24,7 +24,7 @@ hillcipher.java <keyfilepath> <plaintextfilepath>
 Euler's Totient / Phi written in C
 
 # 2014_UCF_LPC_fact
-  UCF Local Programming Contest — August 30, 2014<br />
+  <center>UCF Local Programming Contest — August 30, 2014</center><br />
   Factorial Products    Filename: fact     (Difficulty Level: Hard)<br />
   Factorial is just a game of multiplications. Formally, it can be defined as a recurrence relation:<br />
       Fact (0) = 1<br />
