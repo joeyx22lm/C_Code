@@ -29,11 +29,13 @@ Euler's Totient / Phi written in C
   **UCF Local Programming Contest** — *August 30, 2014*<br />
   **Filename:** fact<br />
   **Difficulty Level:** Hard<br />
+  
   Factorial is just a game of multiplications. Formally, it can be defined as a recurrence relation:<br />
       Fact (0) = 1<br />
       Fact (n) = n * Fact(n-1), for all integers n > 0<br />
     This problem is all about multiplications, more and more multiplications. It is a game of
     multiplications of factorials.<br />
+    
   **The Problem:**<br />
    You will be given three lists of numbers: A, B and C. You have to take the factorials of all the
     numbers in each list and multiply them to get ProFact(A), ProFact(B), ProFact(C). Then report
@@ -42,7 +44,7 @@ Euler's Totient / Phi written in C
       ProFact(A) = 2! * 4! * 7! = 241, 920<br />
       ProFact(B) = 0! * 1! * 9! = 362, 880<br />
       ProFact(C) = 2! * 3! * 5! * 5! = 172,800<br />
-    So, the largest product for this example is ProFact(B).<br /><br /><br />
+    So, the largest product for this example is ProFact(B).<br /><br />
   **The Input:**<br />
     The first input line contains a positive integer, n, indicating the number of test cases. Each test
     case consists of four input lines. The first line consists of three positive integers providing,
