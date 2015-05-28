@@ -28,13 +28,12 @@ Euler's Totient / Phi written in C
 # 2014_UCF_LPC_fact: Factorial Products
   **UCF Local Programming Contest** — *August 30, 2014*<br />
   **Filename:** fact<br />
-  **Difficulty Level:** Hard<br /><br />
-  
+  **Difficulty Level:** Hard<br />
   Factorial is just a game of multiplications. Formally, it can be defined as a recurrence relation:<br />
       Fact (0) = 1<br />
       Fact (n) = n * Fact(n-1), for all integers n > 0<br />
     This problem is all about multiplications, more and more multiplications. It is a game of
-    multiplications of factorials.<br /><br />
+    multiplications of factorials.<br />
   **The Problem:**<br />
    You will be given three lists of numbers: A, B and C. You have to take the factorials of all the
     numbers in each list and multiply them to get ProFact(A), ProFact(B), ProFact(C). Then report
