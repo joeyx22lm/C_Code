@@ -87,3 +87,36 @@ Factorial Function by both Iteration and Recursion .. ohh my lawd
     Case #1: B<br />
     Case #2: TIE<br />
     Case #3: C<br />
+    
+# VisualCron
+Accepts multiple CronJobs as input, outputs CronJob schedule predictions for a One Month period. Written in PHP.
+
+	* * * * *
+	| | | | | 
+	| | | | | 
+	| | | | +---- Day of the Week   (range: 0-6, 0 for Sunday)
+	| | | +------ Month of the Year (range: 1-12)
+	| | +-------- Day of the Month  (range: 1-31)
+	| +---------- Hour              (range: 0-23)
+	+------------ Minute            (range: 0-59)
+	NOTE: Does not accept multi-space commands in cronjob.
+		DO NOT:  * * * * * /usr/bin/php5 /var/www/script.php
+		DO:	 * * * * * /var/www/script.php
+	NOTE: Due to the number of iterations required at this time, there is a 
+	      good chance that this script will run past max_execution_time. 
+	      The example given below took 89 seconds on a tuned quad-core 
+	      production server. The set_time_limit below is set to kill execution
+	      at 5 minutes.
+	
+	
+	Visual Cron Job
+	2015 Joseph Orlando
+
+** Input data **
+	VisualCron::AddCron('*/11 * * * * <RunThisCommand>');
+	VisualCron::AddCron('*/7 * * * * <RunThisCommand>');
+** Output Data **
+	VisualCron::ViewCron(); // Outputs:
+	0: 01/01/2015 12:07AM: */7 * * * * <RunThisCommand>
+	1: 01/01/2015 12:11AM: */11 * * * * <RunThisCommand>
+	... Etc.
