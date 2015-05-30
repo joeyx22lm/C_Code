@@ -112,11 +112,11 @@ Accepts multiple CronJobs as input, outputs CronJob schedule predictions for a O
 	Visual Cron Job
 	2015 Joseph Orlando
 
-** Input data **
+**Input data**
 
 	VisualCron::AddCron('*/11 * * * * <RunThisCommand>');
 	VisualCron::AddCron('*/7 * * * * <RunThisCommand>');
-** Output Data **
+**Output Data**
 
 	VisualCron::ViewCron(); // Outputs:
 	0: 01/01/2015 12:07AM: */7 * * * * <RunThisCommand>
