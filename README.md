@@ -3,30 +3,37 @@ Small-scale code, **nothing for production use**; all is written by me for vario
 
 **Programmer Beware:** I always comment code, *sometimes*.
 
-# COP - AssignmentOne.c
+# UCF COP - Computer Science
+
+**AssignmentOne.c**
 The goal of this assignment is to write an application that reads in a data file and stores the data as a linked list.
 
-# COP - AssignmentTwo.c
+**AssignmentTwo.c**
 This assignment provides more practical experience parsing data files and creating a linked list and builds upon it with recursion and writing a data file.
 
-# COP - AssignmentFour.c
+**AssignmentThree.c**
+This assignment's primary goal is to find all permutations of given string.
+
+**AssignmentFour.c**
 This assignment provides a platform for BST operations, Data Structures.
 
-# BaseConvert.c
+# UCF CIS - Computer Security
+
+**BaseConvert.c**
 Numeric base converter supporting binary, decimal, octal and hexidecimal. Written in C.
 
-# Factorial.java
-Factorial Function by both Iteration and Recursion .. ohh my lawd 
-
-# PrimitiveRoot.php
+**PrimitiveRoot.php**
 Function that finds if a is primitive root of p
 
-# hillcipher.java
+**hillcipher.java**
 Java CLI program, encrypts plaintext file based on key file, with hill cipher.
 hillcipher.java <keyfilepath> <plaintextfilepath>
 
-# phi.c
+**phi.c**
 Euler's Totient / Phi written in C
+
+**Factorial.java**
+Factorial Function by both Iteration and Recursion .. ohh my lawd 
 
 # 2014_UCF_LPC_fact: Factorial Products
   **UCF Local Programming Contest** — *August 30, 2014*<br />
