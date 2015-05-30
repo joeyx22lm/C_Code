@@ -113,9 +113,11 @@ Accepts multiple CronJobs as input, outputs CronJob schedule predictions for a O
 	2015 Joseph Orlando
 
 ** Input data **
+
 	VisualCron::AddCron('*/11 * * * * <RunThisCommand>');
 	VisualCron::AddCron('*/7 * * * * <RunThisCommand>');
 ** Output Data **
+
 	VisualCron::ViewCron(); // Outputs:
 	0: 01/01/2015 12:07AM: */7 * * * * <RunThisCommand>
 	1: 01/01/2015 12:11AM: */11 * * * * <RunThisCommand>
