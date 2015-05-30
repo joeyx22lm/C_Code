@@ -1,5 +1,5 @@
 # SmallScale
-Small-scale code, **nothing for production use**; all is written by me for various personal or school projects; All code is **open source**, as in free air (*disregard individual file license*). If it is wrong, doesn't compile, causes spontaneous combustion, etc. it's not on me. Miscellaneous code written in C, Java and PHP. Refer to this readme for each program / script description. Refer to each file for logic, credits or any additional information.
+Small-scale code, **nothing for production use**; all is written by me for various personal or school projects; All code is **open source**, as in free air just give credit. If it is wrong, doesn't compile, causes spontaneous combustion, etc. it's not on me. Miscellaneous code written in C, Java and PHP. Refer to this readme for each program / script description. Refer to each file for logic, credits or any additional information.
 
 **Programmer Beware:** I always comment code, *sometimes*.
 
@@ -8,6 +8,9 @@ The goal of this assignment is to write an application that reads in a data file
 
 # COP - AssignmentTwo.c
 This assignment provides more practical experience parsing data files and creating a linked list and builds upon it with recursion and writing a data file.
+
+# COP - AssignmentFour.c
+This assignment provides a platform for BST operations, Data Structures.
 
 # BaseConvert.c
 Numeric base converter supporting binary, decimal, octal and hexidecimal. Written in C.
