@@ -32,6 +32,8 @@ hillcipher.java <keyfilepath> <plaintextfilepath>
 **phi.c**
 Euler's Totient / Phi written in C
 
+# Just for fun
+
 **Factorial.java**
 Factorial Function by both Iteration and Recursion .. ohh my lawd 
 
