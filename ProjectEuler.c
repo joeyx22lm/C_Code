@@ -17,13 +17,13 @@ int problemOne(){
 // ############################################################################################### \\
 \\ ############################################################################################### //
 
+// projecteuler.net: problem 63 Powerful Digit Counts
+// find numbers where n^m = a
+// and a is m digits long.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-// projecteuler.net: problem 63 Powerful Digit Counts
-// find numbers where n^m = a
-// and a is m digits long.
 int problem63(){
    intmax_t current = 0;
    char currentC[200];
