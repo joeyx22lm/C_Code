@@ -1,9 +1,7 @@
-// global library
-#include <stdio.h>
-
 // projecteuler.net: problem 1
 // find the sum of all multiples
 // of 3 and 5 from 1 to 1000
+#include <stdio.h>
 int problemOne(){
    int ceiling = 1000;
    int sum = 0;
@@ -16,8 +14,10 @@ int problemOne(){
    return 1;
 }
 
+// ############################################################################################### \\
+\\ ############################################################################################### //
 
-// libraries for Problem 63
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
