@@ -32,14 +32,12 @@ public class FibonacciWithMemoization {
 		for(int i = 0; i<50;i++){
 			System.out.print(fibonacci(i) + " ");
 		}
-		System.out.println("Without Memoization: " + (currentTime() - start) + "\n\n");
-		
-		
+		System.out.println("\nWithout Memoization: " + (currentTime() - start) + "\n");
 		fibCache = new HashMap<Integer, Integer>();
 		start = currentTime();
 		for(int i = 0; i<50;i++){
 			System.out.print(fibonacciMemoized(i) + " ");
 		}
-		System.out.println("With Memoization: " + (currentTime() - start) + "\n\n");
+		System.out.println("\nWith Memoization: " + (currentTime() - start) + "\n");
 	}
 }
