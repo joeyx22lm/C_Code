@@ -15,17 +15,10 @@ public class Factorial
   }
   
   // factorial through recursion
-  public static long factorialR(long N){
-   // set value to our minimum of 1
-   long Value = 1;
-   if(N > 1){
-     // if N > than our minimum of 1
-     // multiply N by the recurse
-      Value = (N * factorialR(--N));
-   }
-   // return sum of recurses
-   return Value;
+  public static long factorial(long n){
+      return ((n<2) ? 1 : (n * factorial(n-1)));
   }
+
   public static void main(String [] args){
     System.out.println("Factorial of: ");
     Scanner s = new Scanner(System.in);
