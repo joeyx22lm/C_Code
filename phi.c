@@ -2,7 +2,7 @@
 * Phi / Euler's Totient written in C
 * 3/16/2015 - Joseph Orlando
 */
-public static long phi(unsigned long input) {
+static long phi(unsigned long input) {
    long i,pow,current = 1;
    for (i = 2; input != 1; i++){
       pow = 1;
